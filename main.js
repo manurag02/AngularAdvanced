@@ -358,12 +358,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
 /* harmony import */ var _angular2_google_chart_directive__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./angular2-google-chart.directive */ "./src/app/angular2-google-chart.directive.ts");
 /* harmony import */ var ngx_bootstrap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-bootstrap */ "./node_modules/ngx-bootstrap/index.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -408,7 +410,7 @@ var AppModule = /** @class */ (function () {
                     { path: 'SingleCountry', component: _single_country_single_country_component__WEBPACK_IMPORTED_MODULE_5__["SingleCountryComponent"] }
                 ])
             ],
-            providers: [_rest_service__WEBPACK_IMPORTED_MODULE_7__["RestService"], _angular_http__WEBPACK_IMPORTED_MODULE_9__["HttpModule"]],
+            providers: [_rest_service__WEBPACK_IMPORTED_MODULE_7__["RestService"], _angular_http__WEBPACK_IMPORTED_MODULE_9__["HttpModule"], { provide: _angular_common__WEBPACK_IMPORTED_MODULE_12__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_12__["HashLocationStrategy"] }],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
         })
     ], AppModule);
